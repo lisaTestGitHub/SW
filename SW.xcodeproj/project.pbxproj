@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7276A2CB1F452ABD00546586 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7276A2C91F452ABD00546586 /* Interface.storyboard */; };
+		7276A2CD1F452ABD00546586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7276A2CC1F452ABD00546586 /* Assets.xcassets */; };
+		7276A2D41F452ABD00546586 /* wa2 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7276A2D31F452ABD00546586 /* wa2 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7276A2DA1F452ABD00546586 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7276A2D91F452ABD00546586 /* InterfaceController.m */; };
+		7276A2DD1F452ABD00546586 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7276A2DC1F452ABD00546586 /* ExtensionDelegate.m */; };
+		7276A2E01F452ABD00546586 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7276A2DF1F452ABD00546586 /* NotificationController.m */; };
+		7276A2E21F452ABD00546586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7276A2E11F452ABD00546586 /* Assets.xcassets */; };
+		7276A2E71F452ABD00546586 /* wa2.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7276A2C71F452ABD00546586 /* wa2.app */; };
 		72B0F9791F3E379400B009C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B0F9781F3E379400B009C3 /* AppDelegate.m */; };
 		72B0F97C1F3E379400B009C3 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B0F97B1F3E379400B009C3 /* MasterViewController.m */; };
 		72B0F97F1F3E379400B009C3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B0F97E1F3E379400B009C3 /* DetailViewController.m */; };
@@ -19,6 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7276A2D51F452ABD00546586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B0F96C1F3E379400B009C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7276A2D21F452ABD00546586;
+			remoteInfo = "wa2 Extension";
+		};
+		7276A2E51F452ABD00546586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B0F96C1F3E379400B009C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7276A2C61F452ABD00546586;
+			remoteInfo = wa2;
+		};
 		72B0F9901F3E379500B009C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 72B0F96C1F3E379400B009C3 /* Project object */;
@@ -35,7 +57,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7276A2ED1F452ABD00546586 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7276A2D41F452ABD00546586 /* wa2 Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7276A2EF1F452ABD00546586 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7276A2E71F452ABD00546586 /* wa2.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7276A2C71F452ABD00546586 /* wa2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wa2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7276A2CA1F452ABD00546586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7276A2CC1F452ABD00546586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7276A2CE1F452ABD00546586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7276A2D31F452ABD00546586 /* wa2 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "wa2 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7276A2D81F452ABD00546586 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		7276A2D91F452ABD00546586 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		7276A2DB1F452ABD00546586 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		7276A2DC1F452ABD00546586 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		7276A2DE1F452ABD00546586 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		7276A2DF1F452ABD00546586 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		7276A2E11F452ABD00546586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7276A2E31F452ABD00546586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7276A2E41F452ABD00546586 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		72B0F9741F3E379400B009C3 /* SW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B0F9771F3E379400B009C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		72B0F9781F3E379400B009C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +118,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7276A2D01F452ABD00546586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72B0F9711F3E379400B009C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,12 +149,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7276A2C81F452ABD00546586 /* wa2 */ = {
+			isa = PBXGroup;
+			children = (
+				7276A2C91F452ABD00546586 /* Interface.storyboard */,
+				7276A2CC1F452ABD00546586 /* Assets.xcassets */,
+				7276A2CE1F452ABD00546586 /* Info.plist */,
+			);
+			path = wa2;
+			sourceTree = "<group>";
+		};
+		7276A2D71F452ABD00546586 /* wa2 Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7276A2D81F452ABD00546586 /* InterfaceController.h */,
+				7276A2D91F452ABD00546586 /* InterfaceController.m */,
+				7276A2DB1F452ABD00546586 /* ExtensionDelegate.h */,
+				7276A2DC1F452ABD00546586 /* ExtensionDelegate.m */,
+				7276A2DE1F452ABD00546586 /* NotificationController.h */,
+				7276A2DF1F452ABD00546586 /* NotificationController.m */,
+				7276A2E11F452ABD00546586 /* Assets.xcassets */,
+				7276A2E31F452ABD00546586 /* Info.plist */,
+				7276A2E41F452ABD00546586 /* PushNotificationPayload.apns */,
+			);
+			path = "wa2 Extension";
+			sourceTree = "<group>";
+		};
 		72B0F96B1F3E379400B009C3 = {
 			isa = PBXGroup;
 			children = (
 				72B0F9761F3E379400B009C3 /* SW */,
 				72B0F9921F3E379500B009C3 /* SWTests */,
 				72B0F99D1F3E379500B009C3 /* SWUITests */,
+				7276A2C81F452ABD00546586 /* wa2 */,
+				7276A2D71F452ABD00546586 /* wa2 Extension */,
 				72B0F9751F3E379400B009C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +193,8 @@
 				72B0F9741F3E379400B009C3 /* SW.app */,
 				72B0F98F1F3E379500B009C3 /* SWTests.xctest */,
 				72B0F99A1F3E379500B009C3 /* SWUITests.xctest */,
+				7276A2C71F452ABD00546586 /* wa2.app */,
+				7276A2D31F452ABD00546586 /* wa2 Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +238,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7276A2C61F452ABD00546586 /* wa2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7276A2EE1F452ABD00546586 /* Build configuration list for PBXNativeTarget "wa2" */;
+			buildPhases = (
+				7276A2C51F452ABD00546586 /* Resources */,
+				7276A2ED1F452ABD00546586 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7276A2D61F452ABD00546586 /* PBXTargetDependency */,
+			);
+			name = wa2;
+			productName = wa2;
+			productReference = 7276A2C71F452ABD00546586 /* wa2.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7276A2D21F452ABD00546586 /* wa2 Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7276A2EC1F452ABD00546586 /* Build configuration list for PBXNativeTarget "wa2 Extension" */;
+			buildPhases = (
+				7276A2CF1F452ABD00546586 /* Sources */,
+				7276A2D01F452ABD00546586 /* Frameworks */,
+				7276A2D11F452ABD00546586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wa2 Extension";
+			productName = "wa2 Extension";
+			productReference = 7276A2D31F452ABD00546586 /* wa2 Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		72B0F9731F3E379400B009C3 /* SW */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72B0F9A31F3E379500B009C3 /* Build configuration list for PBXNativeTarget "SW" */;
@@ -147,10 +279,12 @@
 				72B0F9701F3E379400B009C3 /* Sources */,
 				72B0F9711F3E379400B009C3 /* Frameworks */,
 				72B0F9721F3E379400B009C3 /* Resources */,
+				7276A2EF1F452ABD00546586 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7276A2E61F452ABD00546586 /* PBXTargetDependency */,
 			);
 			name = SW;
 			productName = SW;
@@ -202,6 +336,14 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = local;
 				TargetAttributes = {
+					7276A2C61F452ABD00546586 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					7276A2D21F452ABD00546586 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					72B0F9731F3E379400B009C3 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -234,11 +376,30 @@
 				72B0F9731F3E379400B009C3 /* SW */,
 				72B0F98E1F3E379500B009C3 /* SWTests */,
 				72B0F9991F3E379500B009C3 /* SWUITests */,
+				7276A2C61F452ABD00546586 /* wa2 */,
+				7276A2D21F452ABD00546586 /* wa2 Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7276A2C51F452ABD00546586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7276A2CD1F452ABD00546586 /* Assets.xcassets in Resources */,
+				7276A2CB1F452ABD00546586 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7276A2D11F452ABD00546586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7276A2E21F452ABD00546586 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72B0F9721F3E379400B009C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +427,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7276A2CF1F452ABD00546586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7276A2DD1F452ABD00546586 /* ExtensionDelegate.m in Sources */,
+				7276A2DA1F452ABD00546586 /* InterfaceController.m in Sources */,
+				7276A2E01F452ABD00546586 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72B0F9701F3E379400B009C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +467,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7276A2D61F452ABD00546586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7276A2D21F452ABD00546586 /* wa2 Extension */;
+			targetProxy = 7276A2D51F452ABD00546586 /* PBXContainerItemProxy */;
+		};
+		7276A2E61F452ABD00546586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7276A2C61F452ABD00546586 /* wa2 */;
+			targetProxy = 7276A2E51F452ABD00546586 /* PBXContainerItemProxy */;
+		};
 		72B0F9911F3E379500B009C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 72B0F9731F3E379400B009C3 /* SW */;
@@ -309,6 +490,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7276A2C91F452ABD00546586 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7276A2CA1F452ABD00546586 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		72B0F9801F3E379400B009C3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -328,6 +517,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7276A2E81F452ABD00546586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = wa2_Extension;
+				INFOPLIST_FILE = wa2/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = testLisa.HLT.SW.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		7276A2E91F452ABD00546586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = wa2_Extension;
+				INFOPLIST_FILE = wa2/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = testLisa.HLT.SW.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		7276A2EA1F452ABD00546586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "wa2 Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = testLisa.HLT.SW.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		7276A2EB1F452ABD00546586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "wa2 Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = testLisa.HLT.SW.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 		72B0F9A11F3E379500B009C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -438,6 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = testLisa.HLT.SW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,6 +705,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = testLisa.HLT.SW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,6 +770,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7276A2EC1F452ABD00546586 /* Build configuration list for PBXNativeTarget "wa2 Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7276A2EA1F452ABD00546586 /* Debug */,
+				7276A2EB1F452ABD00546586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7276A2EE1F452ABD00546586 /* Build configuration list for PBXNativeTarget "wa2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7276A2E81F452ABD00546586 /* Debug */,
+				7276A2E91F452ABD00546586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		72B0F96F1F3E379400B009C3 /* Build configuration list for PBXProject "SW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
